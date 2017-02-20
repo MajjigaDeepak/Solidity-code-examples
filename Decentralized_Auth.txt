@@ -1,0 +1,162 @@
+pragma solidity ^0.4.3;
+contract AccessResourceServer {
+  
+    struct Client
+    {
+      /* Blockchain address of the end user*/
+    address enduser;
+    
+    
+    /*Unique id of the user in the network */
+   
+    enduserdeatils public arrenduser;
+    mapping(arrenduserdetails=>EndUserdetails) public endusermapping;
+    
+    
+    }
+
+#Constructor..,
+function AccessResourceServer ()
+{
+}
+    
+    struct EndUserdetails
+    {
+         uint256[]  empids;
+         
+         string public  email;
+         
+         
+         
+         string public userredirecturl;
+         
+         uint256 public targetapplicationid;
+         
+         
+    }
+    struct ApiDetails
+    {
+        string public APIUrl;
+        
+        string public portno;
+        
+        uint256 targetapplicationid;
+        
+    }
+    
+    struct ResourceServer
+    {
+        //Resource server blockchainaddress
+        address public resourceserveraddr;
+        
+        uint[] public targetapplications;
+        
+        int[] public registeredusers;
+        
+        
+    }
+    
+    function GetEndUserDetails(int id) returns (int id)
+    {
+        /* Sender is the enduser by default */
+        enduseraddres=msg.sender;
+        
+        endusermapping
+        int id=endids[id];
+        
+        if(id!=0)
+        {
+            event("ValidEndUserid");
+        }
+        
+        return id;
+    }
+    
+    function CheckorAddEndUser(int id)
+    {
+        getvalidid=GetEndUserDetails(id);
+        if(getvalidid!=0)
+        {
+            event("Valid user")
+            if(registeredusers[id]==0)
+            {
+                registeredusers.push(id);
+            }
+        }
+        
+    }
+    
+    function RegistrationForUsers(int id) returns uint256
+    {
+        if(registeredusers[id]!=0)
+        {
+            event("User registered with Resource Server");
+            //create auth code and assign
+            uint256 public authcode;
+            
+            return authcode;
+            
+            
+        }
+    }
+    
+ 
+contract GetToken(int enduserid,int targetapplicationid) is AccessResourceServer {
+    /* define variable greeting of the type string */
+    int[] public tokenids;
+    for(int i=0;i<registeredusers;i++)
+    {
+        //For each registered user,get target application id's,
+        
+        targetresourceid=endusermapping.targetapplicationid;
+        //Check if target resource is in resource,
+        if(targetresourceid!=0)
+        {
+            event("targetresourceid is valid",targetresourceid);
+            tokenid=GenerateAuthToken();
+            tokenids.push(tokenid);
+           
+        }
+        
+    }
+
+function GetToken
+{
+}
+    struct targetapplicationdetails
+    {
+        int public twitter_id;
+        int public facebook_id;
+        int public hdfc_id;
+        int[] public targetapplicationids;
+
+        
+    }
+    //Function to generate OAuth 2.0 token,
+    function GenerateAuthToken(uint authcode,int targetapplicationid) returns uint256
+    {
+        random_number = Math.floor(Math.random() * 100000) + 1;
+        uint public authtoken;
+        authtoken=random_number+authcode+targetapplicationid;
+        
+    }
+    
+
+ function GetAccessToApps(int[] tokenids,authcode,bool giveaccess)
+ {
+     //GetUserdetailsFro auth code
+    //open respective ports of the app,
+    giveaccess=true;
+     
+ }
+
+    /* this runs when the contract is executed */
+    function greeter(string _greeting) public {
+        greeting = _greeting;
+    }
+
+    /* main function */
+    function greet() constant returns (string) {
+        return greeting;
+    }
+}
